@@ -219,8 +219,8 @@
 			
 				.image.avatar48 img
 				{
-					width: 48px;
-					height: 48px;
+					width: 60px;
+					height: 60px;
 				}
 
 			.image.fit a
@@ -516,6 +516,18 @@
 				{
 					font-size: 1em;
 				}
+				.item header h5
+				{
+					font-size: 1em;
+					opacity: 0.8;
+				}
+				.item header small
+				{
+					line-height: 1.5em;
+					font-size: 1em;
+					display: inline-block;
+				}
+
 
 /*********************************************************************************/
 /* Icons                                                                         */
