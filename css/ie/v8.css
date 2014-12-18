@@ -1,5 +1,5 @@
 /*
-	Prologue by HTML5 UP
+	Helios by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -7,6 +7,22 @@
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
+
+	a
+	{
+		border-bottom: solid 1px #ddd;
+	}
+	
+	hr
+	{
+		border-top: solid 1px #777;
+		border-bottom: solid 1px #777;
+	}
+
+	.timestamp
+	{
+		color: #777;
+	}
 
 	/* Section/Article */
 
@@ -27,27 +43,52 @@
 				margin-bottom: 0;
 			}
 
-	/* Form */
+	/* List */
 
-		form
+		ul
 		{
 		}
-		
-			form input[type="text"],
-			form input[type="email"],
-			form input[type="password"],
-			form select,
-			form textarea
+
+			ul.divided
 			{
-				-ms-behavior: url('css/ie/PIE.htc');
 			}
 			
+				ul.divided li
+				{
+					border-top: solid 1px #777;
+				}
+
+			ul.menu
+			{
+			}
+			
+				ul.menu li
+				{
+					border-left: solid 1px #777;
+				}
+
+			ul.icons
+			{
+				background: #333;
+				-ms-behavior: url('css/ie/PIE.htc');
+			}
+
 	/* Button */
 		
-		input[type="button"],
-		input[type="submit"],
-		input[type="reset"],
 		.button
+		{
+			-ms-behavior: url('css/ie/PIE.htc');
+		}
+
+/*********************************************************************************/
+/* Icons                                                                         */
+/*********************************************************************************/
+
+	.icon
+	{
+	}
+
+		.icon.circled
 		{
 			-ms-behavior: url('css/ie/PIE.htc');
 		}
@@ -56,55 +97,127 @@
 /* Header                                                                        */
 /*********************************************************************************/
 
+	#header
+	{
+		-ms-behavior: url('css/ie/backgroundsize.min.htc');
+	}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
 	#nav
 	{
 	}
 	
-		#nav ul
+		#nav > ul
 		{
 		}
 		
-			#nav ul li
+			#nav > ul:before,
+			#nav > ul:after
 			{
+				border-top: solid 1px #777;
+				border-bottom: solid 1px #777;
 			}
-			
-				#nav ul li a
+
+			#nav > ul > li
+			{
+				-ms-behavior: url('css/ie/PIE.htc');
+			}
+
+				#nav > ul > li.active
 				{
-					color: #888;
+					border-color: #999;
 				}
 
-					#nav ul li a.active
-					{
-						background: #1C2022;
-					}
+	.dropotron
+	{
+		background: #fff;
+		-ms-behavior: url('css/ie/PIE.htc');
+	}
 
+		.dropotron li
+		{
+			border-color: #eee;
+			padding-right: 1em;
+			color: #5b5b5b;
+		}
+
+		.dropotron.level-0
+		{
+			box-shadow: none !important;
+			margin-top: 1em;
+		}
+	
 /*********************************************************************************/
-/* Main                                                                          */
+/* Carousel                                                                      */
 /*********************************************************************************/
 
-	#main
+	.carousel
 	{
 	}
 
-		#main > section
+		.carousel .forward,
+		.carousel .backward
 		{
+			border-radius: 100%;
+			background-color: #483949;
+			width: 7em;
+			height: 7em;
+			margin-top: -3.5em;
+			border-radius: 100%;
+			-ms-behavior: url('css/ie/PIE.htc');
 		}
-		
-			#main > section.cover
+
+			.carousel .forward
 			{
-				background-position: auto;
-				-ms-behavior: url('css/ie/backgroundsize.min.htc');
+				right: -3.5em;
 			}
 
+			.carousel .backward
+			{
+				left: -3.5em;
+			}
+		
+			.carousel .forward:before,
+			.carousel .backward:before
+			{
+				display: none;
+			}
+			
 /*********************************************************************************/
-/* Side Panel                                                                    */
+/* Footer                                                                        */
 /*********************************************************************************/
 
-	#sidePanelToggle
+	#footer
 	{
 	}
 	
-		#sidePanelToggle .toggle
+		#footer ul.divided li,
+		#footer ul.menu li,
+		#footer hr
 		{
-			background-color: #888;
+			border-color: #3B373C;
 		}
+	
+		#footer .icons
+		{
+			background: #2F2930;
+		}
+	
+		#footer .copyright
+		{
+			color: #777;
+		}
+
+			#footer .copyright a
+			{
+				color: #aaa;
+				border: 0;
+			}
+
+				#footer .copyright a:hover
+				{
+					color: #ccc;
+				}
