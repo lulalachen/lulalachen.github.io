@@ -1043,11 +1043,27 @@
 			color: #2b252c;
 		}
 
-		#footer header
+		#footer header 
 		{
+			position: relative;
 			text-align: center;
 			cursor: default;
 		}
+		#footer header a:hover
+		{
+			text-align: center;
+			opacity: 0.7;
+			cursor: default;
+		}
+
+		#footer #photo a 
+		{
+			opacity: 0.5;
+		}
+			#footer #photo a:hover
+			{
+				opacity: 1;
+			}
 		
 		#footer h2,
 		#footer h3,
@@ -1128,7 +1144,7 @@
 				width: 6em;
 				height: 6em;
 				border-radius: 100%;
-				background-color: rgba(72,57,73, 0.5);				
+				background-color: rgba(72,57,73, 0.7);				
 				position: absolute;
 				top: 50%;
 				margin-top: -3em;
@@ -1213,7 +1229,7 @@
 				opacity: 0;
 			}
 		
-			.carousel article .image
+			.carousel article .image a
 			{
 				position: relative;
 				left: -1em;
@@ -1222,7 +1238,16 @@
 				margin-right: -2em;
 				margin-bottom: 3em;
 			}
-		
+				.carousel article .image a:hover
+				{
+					position: relative;
+					left: -1em;
+					top: 0;
+					opacity: 0.5;
+					width: auto;
+					margin-right: -2em;
+					margin-bottom: 3em;
+				}		
 			.carousel article p
 			{
 				text-align: center;
