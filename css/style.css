@@ -674,19 +674,24 @@
 
 	.wrapper
 	{
-		background: #fff;
-		margin: 0 0 2em 0;
+		background: #fafafa;
+		margin: 0 0 0em 0;
 		padding: 6em 0 6em 0;
 	}
-	
+
 		.wrapper.style1
 		{
 		}
 
 		.wrapper.style2
 		{
-			padding-top: 0;
+			padding-top: 2em;
 		}
+
+			.wrapper.style2 header
+			{
+				padding-top: 3em;
+			}
 
 /*********************************************************************************/
 /* Header                                                                        */
@@ -695,7 +700,7 @@
 	#header
 	{
 		position: relative;
-		background-image: url('../images/header.jpg');
+		background-image: url('../images/boston.png');
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -1056,11 +1061,11 @@
 			cursor: default;
 		}
 
-		#footer #photo a 
+		#footer #flickr a 
 		{
 			opacity: 0.5;
 		}
-			#footer #photo a:hover
+			#footer #flickr a:hover
 			{
 				opacity: 1;
 			}
