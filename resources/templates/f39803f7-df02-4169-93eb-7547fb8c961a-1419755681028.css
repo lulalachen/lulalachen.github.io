@@ -1,0 +1,80 @@
+#t-f39803f7-df02-4169-93eb-7547fb8c961a {
+  background-color: #FFFFFF;
+  background-image: none;
+  min-width: 320px;
+  min-height: 20px;
+}
+#t-f39803f7-df02-4169-93eb-7547fb8c961a > #alignmentBox {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  min-width: 320px;
+  min-height: 20px;
+}
+#t-f39803f7-df02-4169-93eb-7547fb8c961a #t-Rich_text_20 {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  width: 320px;
+  height: 25px;
+  background-color: #000000;
+  background-image: none;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  box-shadow: none;
+  text-shadow: none;
+  line-height: 20px;
+  font-size: 11pt;
+  font-family: Arial,Arial;
+}
+#t-f39803f7-df02-4169-93eb-7547fb8c961a #t-Rich_text_20 .valign {
+  vertical-align: middle;
+  text-align: center;
+}
+#t-f39803f7-df02-4169-93eb-7547fb8c961a #t-Rich_text_20 span {
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial,Arial;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: 400;
+}
+#t-f39803f7-df02-4169-93eb-7547fb8c961a #t-Rich_text_20 span#rtr-t-Rich_text_20_0 {
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial,Arial;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0px;
+}
+#t-f39803f7-df02-4169-93eb-7547fb8c961a #t-Image_34 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 16px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  box-shadow: none;
+}
+#t-f39803f7-df02-4169-93eb-7547fb8c961a #t-Image_72 {
+  position: absolute;
+  top: 4px;
+  left: 228px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  box-shadow: none;
+}
+#t-f39803f7-df02-4169-93eb-7547fb8c961a > #loadMark {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}
