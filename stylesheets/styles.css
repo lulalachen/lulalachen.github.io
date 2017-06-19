@@ -1,7 +1,9 @@
+@import url(//fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
 body {
   background-color: #fff;
   padding:50px;
-  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 14px/1.5 -apple-system, cwtexhei, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color:#595959;
   font-weight:400;
 }
@@ -15,12 +17,20 @@ p, ul, ol, table, pre, dl {
   margin:0 0 20px;
 }
 
+tt {
+  font-family: 'cwtexhei', sans;
+}
+
 ul {
   padding-left: 20px;
 }
 
 li {
-  padding-left: 10px;
+  padding: 0 0 10px 10px;
+}
+
+li h3 {
+  margin-bottom: 10px;
 }
 
 h1, h2, h3 {
@@ -117,6 +127,10 @@ header {
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+}
+
+.headerIcons {
+  margin: 10px 0;
 }
 
 .headerIcons a {
