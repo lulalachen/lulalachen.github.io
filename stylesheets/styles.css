@@ -130,7 +130,7 @@ header {
 }
 
 .headerIcons {
-  margin: 10px 0;
+  margin: 10px 0 20px;
 }
 
 .headerIcons a {
@@ -280,6 +280,14 @@ footer {
 
   pre, code {
     word-wrap:normal;
+  }
+
+  ul {
+    padding-left: 10px;
+  }
+
+  li {
+    padding: 0 0 5px 5px;
   }
 }
 
