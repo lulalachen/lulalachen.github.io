@@ -12,6 +12,7 @@
     <meta property="og:image"              content="https://i.imgur.com/vTwgdYj.jpg" />
 
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/loading.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
 
@@ -21,8 +22,20 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="wrapper">
+  <body onload="
+    document.getElementById('loader').className = 'hide';document.getElementById('wrapper').className = 'wrapper show';
+    ">
+    <div id="loader" class="loader">
+      <div class="spinner" id="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+
+    <div class="wrapper loading" id="wrapper">
 
       <header>
         <img src="images/avatar.jpg" alt="avatar">
@@ -43,24 +56,24 @@
         <p>Functional Programing Lover</p>
         <p>
         	B.A. in Economics, NTU
-        	<a href="http://www.econ.ntu.edu.tw/?locale=en">
+        	<a href="http://www.econ.ntu.edu.tw/?locale=en" target="_blank">
         		<i class="fa fa-link"></i>
         	</a>
         </p>
         <div class="headerIcons">
-          <a href="https://fb.me/lulalachen">
+          <a target="_blank" href="https://fb.me/lulalachen">
             <i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i>
           </a>
           &nbsp;
-          <a href="https://www.linkedin.com/in/lulalachen/">
+          <a target="_blank" href="https://www.linkedin.com/in/lulalachen/">
             <i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
           </a>
           &nbsp;
-          <a href="https://github.com/lulalachen">
+          <a target="_blank" href="https://github.com/lulalachen">
             <i class="fa fa-2x fa-github" aria-hidden="true"></i>
           </a>
           &nbsp;
-          <a href="mailto:lulalachen@gmail.com">
+          <a target="_blank" href="mailto:lulalachen@gmail.com">
             <i class="fa fa-2x fa-inbox" aria-hidden="true"></i>
           </a>
         </div>
@@ -79,13 +92,16 @@
         <hr>
 
         <!-- Experiences -->
-        <h2>Experiences</h2>
+        <h2 class="fade-in">
+          <i class="fa fa-rocket"></i>&nbsp;
+          Experiences
+        </h2>
 
-        <ul>
+        <ul class="fade-in">
           <li>
             <h3>
               MediaTek Inc.
-              (<a href="//www.mediatek.com">website</a>)
+              (<a target="_blank" href="//www.mediatek.com">website</a>)
               <br>
               <tt>Full-Stack Web Developer</tt>
             </h3>
@@ -97,7 +113,7 @@
           <li>
             <h3>
               Codementor Inc.
-              (<a href="//www.codementor.io">website</a>)
+              (<a target="_blank" href="//www.codementor.io">website</a>)
               <br>
               <tt>Full-Stack Web Developer</tt>
             </h3>
@@ -120,7 +136,7 @@
           <li>
             <h3>
               Fubon Insurance
-              (<a href="//www.fubon.com/financialholdings/en/home/index.html">website</a>)
+              (<a target="_blank" href="//www.fubon.com/financialholdings/en/home/index.html">website</a>)
               <br>
               <tt>Sales Agent</tt>
             </h3>
@@ -132,7 +148,7 @@
           <li>
             <h3>
               Dept. of Finance, Nation Taiwan University
-              (<a href="//www.fubon.com/financialholdings/en/home/index.html">website</a>)
+              (<a target="_blank" href="#">website</a>)
               <br>
               <tt>Invited Leturer on Insurance</tt>
             </h3>
@@ -147,8 +163,12 @@
         <hr>
 
         <!-- Skills -->
-        <h2>Skills</h2>
-        <ul>
+
+        <h2 class="fade-in">
+          <i class="fa fa-heart"></i>&nbsp;
+          Skills
+        </h2>
+        <ul class="fade-in">
           <li>
             <h3>Frontend</h3>
           </li>
@@ -169,7 +189,7 @@
 
       </section>
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a target="_blank" href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>

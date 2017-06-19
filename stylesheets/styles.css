@@ -130,7 +130,7 @@ header {
 }
 
 .headerIcons {
-  margin: 10px 0 20px;
+  margin: 15px 0 20px;
 }
 
 .headerIcons a {
@@ -311,4 +311,47 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+/* Animation */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.fade-in {
+  opacity: 0;  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 0.5s;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 0.5s;
+  animation: fadeIn ease-in 0.5s;
+
+  -webkit-animation-fill-mode: forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }

@@ -11,6 +11,7 @@
     <meta property="og:description"        content="這是Lulala的履歷和個人網頁" />
     <meta property="og:image"              content="https://i.imgur.com/vTwgdYj.jpg" />
 
+    <link rel="stylesheet" href="stylesheets/loading.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
@@ -21,8 +22,20 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="wrapper">
+  <body onload="
+    document.getElementById('loader').className = 'hide';document.getElementById('wrapper').className = 'wrapper show';
+    ">
+    <div id="loader" class="loader">
+      <div class="spinner" id="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+
+    <div class="wrapper loading" id="wrapper">
 
       <header>
         <img src="images/avatar.jpg" alt="avatar">
@@ -42,19 +55,19 @@
         <p>全端網頁工程師</p>
         <p>國立臺灣大學 經濟學系
         <div class="headerIcons">
-          <a href="https://fb.me/lulalachen">
+          <a target="_blank" href="https://fb.me/lulalachen">
             <i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i>
           </a>
           &nbsp;
-          <a href="https://www.linkedin.com/in/lulalachen/">
+          <a target="_blank" href="https://www.linkedin.com/in/lulalachen/">
             <i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
           </a>
           &nbsp;
-          <a href="https://github.com/lulalachen">
+          <a target="_blank" href="https://github.com/lulalachen">
             <i class="fa fa-2x fa-github" aria-hidden="true"></i>
           </a>
           &nbsp;
-          <a href="mailto:lulalachen@gmail.com">
+          <a target="_blank" href="mailto:lulalachen@gmail.com">
             <i class="fa fa-2x fa-inbox" aria-hidden="true"></i>
           </a>
         </div>
@@ -75,13 +88,16 @@
         <hr>
 
         <!-- Experiences -->
-        <h2>經歷</h2>
+        <h2 class="fade-in">
+          <i class="fa fa-rocket"></i>&nbsp;
+          經歷
+        </h2>
 
-        <ul>
+        <ul class="fade-in">
           <li>
             <h3 style="line-height: 25px">
               聯發科技股份有限公司
-              (<a href="//www.mediatek.com">website</a>)
+              (<a target="_blank" href="//www.mediatek.com"><i class="fa fa-link fa-small"></i></a>)
               <br>
               <tt class="chinese">全端工程師</tt>
             </h3>
@@ -93,7 +109,7 @@
           <li>
             <h3 style="line-height: 25px">
               Codementor Inc.
-              (<a href="//www.codementor.io">website</a>)
+              (<a target="_blank" href="//www.codementor.io"><i class="fa fa-link fa-small"></i></a>)
               <br>
               <tt class="chinese">全端工程師</tt>
             </h3>
@@ -117,7 +133,7 @@
           <li>
             <h3 style="line-height: 25px">
               富邦人壽保險股份有限公司
-              (<a href="//www.fubon.com/financialholdings/en/home/index.html">website</a>)
+              (<a target="_blank" href="//www.fubon.com/financialholdings/en/home/index.html">website</a>)
               <br>
               <tt class="chinese">業務專員</tt>
             </h3>
@@ -130,7 +146,7 @@
           <li>
             <h3 style="line-height: 25px">
               台大財金理財服務團
-              (<a href="//www.fubon.com/financialholdings/en/home/index.html">website</a>)
+              (<a target="_blank" href="//www.fubon.com/financialholdings/en/home/index.html">website</a>)
               <br>
               <tt class="chinese">保險客座講師</tt>
             </h3>
@@ -146,8 +162,11 @@
         <hr>
 
         <!-- Skills -->
-        <h2>技能</h2>
-        <ul>
+        <h2 class="fade-in">
+          <i class="fa fa-heart"></i>&nbsp;
+          技能
+        </h2>
+        <ul class="fade-in">
           <li>
             <h3>網頁程式設計能力</h3>
             <p>
@@ -175,7 +194,7 @@
 
       </section>
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a target="_blank" href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
