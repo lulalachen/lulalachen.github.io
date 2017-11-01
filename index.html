@@ -5,35 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Lulala Chen</title>
 
-    <meta property="og:url"                content="https://lulalachen.github.io/" />
+    <meta property="og:url"                content="https://lulalachen.info/" />
     <meta property="og:type"               content="portfolio" />
     <meta property="og:title"              content="Lulala Chen's Portfolio" />
     <meta property="og:description"        content="It's lulalachen's portfolio" />
     <meta property="og:image"              content="https://i.imgur.com/vTwgdYj.jpg" />
 
+    <link rel="icon" href="images/favicon.jpg">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/loading.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
 
-    <script src="https://use.fontawesome.com/79deff34e2.js"></script>
-    <script src="javascripts/loading.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body onload="loaded()">
-    <div id="loader" class="loader">
-      <div class="spinner" id="spinner">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-      </div>
-    </div>
-
-    <div class="wrapper loading" id="wrapper">
+  <body>
+    <div class="wrapper">
 
       <header>
         <img src="images/avatar.jpg" alt="avatar">
@@ -47,6 +36,15 @@
           <b>|</b>
           <b>
             <a href="/index-tw.html">中文版</a>
+          </b>
+          <b>|</b>
+          <b>
+            <a
+              href="/cv/CV-lulalachen-english.pdf"
+              target="_blank"
+            >
+              CV(pdf)
+            </a>
           </b>
         </p>
         <hr>
@@ -102,6 +100,33 @@
         <ul class="fade-in">
           <li>
             <h3>
+              Inbound Tech Inc.
+              (<a target="_blank" href="https://inbound.tw">website</a>)
+              <br>
+              <tt>Tech Consultant / Architect</tt>
+            </h3>
+            <p>
+              The one-year-old startup is aiming break-up and depressed people and helps them with easy-to-understand professional Psychology advices, hosting events, publishing articles, and online questionnaires service.
+            </p>
+            <p>
+              I’m in charge of website renovation. They started business by Wordpress, and they’re facing a scaling problem. I lead team of one PT and one intern to develop new website.
+            </p>
+            <pre>
+{
+  frontEnd: {
+    language: 'JavaScript',
+    framework: 'React.js with Redux',
+  },
+  backEnd: {
+    language: 'JavaScript',
+    framework: 'Node.js with Express',
+  },
+}
+</pre>
+          </li>
+
+          <li>
+            <h3>
               MediaTek Inc.
               (<a target="_blank" href="https://www.mediatek.com">website</a>)
               <br>
@@ -126,8 +151,6 @@
   },
 }
 </pre>
-
-
           </li>
 
           <li>
@@ -210,7 +233,7 @@
         </h2>
         <ul class="fade-in">
           <li>
-            <h3>Frontend</h3>
+            <h3>Programming</h3>
             <pre>
 {
   <i class="fa fa-heart"></i>: 'functional programming',
@@ -219,8 +242,8 @@
       'React.js with Redux'
     ],
     backEnd: [
-      'Python with Django',
       'Node.js with Express.js',
+      'Python with Django',
     ],
     devOps: [
       'Gitlab Pipeline',
@@ -232,14 +255,14 @@
           </li>
 
           <li>
-            <h3>Backend</h3>
+            <h3>Design</h3>
             <pre>
 {
   skills: [
-    'Illustrator', 'Photoshop', 'InDesign'
+    'Illustrator', 'Photoshop', 'InDesign',
   ],
   works: [{
-    name: '2015 Passion Worker',
+    name: '2015 Passion Worker Magazine',
     link: <a target="_blank" href="https://issuu.com/lulalachen/docs/layout_2014.12.15_v3">'link'</a>,
   }, {
     name: 'NTUEcon Post #001',
@@ -269,16 +292,18 @@
 
       </section>
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a target="_blank" href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme modified from <a target="_blank" href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
 
-      <!-- Calendly badge widget begin -->
-      <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
-      <script src="https://calendly.com/assets/external/widget.js" type="text/javascript"></script>
-      <script type="text/javascript">Calendly.initBadgeWidget({url: 'https://calendly.com/lulalachen', text: 'Schedule time with me', color: '#4d5055', branding: true});</script>
-      <!-- Calendly badge widget end -->
 
     </div>
+
+    <!-- Calendly badge widget begin -->
+    <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script type="text/javascript">Calendly.initBadgeWidget({url: 'https://calendly.com/lulalachen', text: 'Schedule time with me', color: '#4d5055', branding: true});</script>
+    <!-- Calendly badge widget end -->
     <script src="javascripts/scale.fix.js"></script>
+    <script src="https://use.fontawesome.com/79deff34e2.js"></script>
   </body>
 </html>
