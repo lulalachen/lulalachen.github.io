@@ -1,4 +1,4 @@
-# Lulala's Page
+# Lulala's Personal Page
 
 ## Theme
 
